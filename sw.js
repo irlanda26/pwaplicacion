@@ -2,13 +2,13 @@ const CHACE_NAME = 'chache-1';
 self.addEventListener('install', e => {
     const cacheProm = caches.open(CHACE_NAME).then(cache => {
         return cache.addAll([
-            '/',
+            './',
             'index.html',
-            '/css/login.css',
-            '/html/login.html',
+            './css/login.css',
+            './html/login.html',
             'js/app.js',
-            '/js/celular.js',
-            '/js/login.js',
+            './js/celular.js',
+            './js/login.js',
             'json.json',
             'celuares.json',
             'logo.png'
